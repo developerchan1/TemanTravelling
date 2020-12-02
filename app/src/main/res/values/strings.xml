@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TemanTravelling</string>
+    <string name="selamat_datang_di_temantravelling_text">Selamat Datang di TemanTravelling</string>
+    <string name="dapatkan_kemudahan_dalam_memesan_tour_guide_disini_text">Dapatkan kemudahan dalam memesan tour guide disini!</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_up_text">Sign up</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="name_text">Name</string>
+    <string name="confirm_password_text">Confirm Password</string>
+</resources>
