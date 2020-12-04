@@ -10,10 +10,12 @@ com/fantasticiii/temantravelling/Activities/OrderTourGuideActivity.java
 com/fantasticiii/temantravelling/Model/History.java
  com.fantasticiii.temantravelling.Model.History
  com.fantasticiii.temantravelling.Model.History$1
-com/fantasticiii/temantravelling/Fragments/ChooseOrderType.java
- com.fantasticiii.temantravelling.Fragments.ChooseOrderType
+com/fantasticiii/temantravelling/Activities/HistoryActivity.java
+ com.fantasticiii.temantravelling.Activities.HistoryActivity
 com/fantasticiii/temantravelling/Activities/SignUpActivity.java
  com.fantasticiii.temantravelling.Activities.SignUpActivity
+ com.fantasticiii.temantravelling.Activities.SignUpActivity$1
+ com.fantasticiii.temantravelling.Activities.SignUpActivity$1$1
 com/fantasticiii/temantravelling/Manager/PreferencesManager.java
  com.fantasticiii.temantravelling.Manager.PreferencesManager
 com/fantasticiii/temantravelling/BuildConfig.java
@@ -37,8 +39,8 @@ com/fantasticiii/temantravelling/Fragments/FormOrderPlan.java
  com.fantasticiii.temantravelling.Fragments.FormOrderPlan$9
 com/fantasticiii/temantravelling/Activities/UserActivity.java
  com.fantasticiii.temantravelling.Activities.UserActivity
-com/fantasticiii/temantravelling/SplashScreen/SplashScreen.java
- com.fantasticiii.temantravelling.SplashScreen.SplashScreen
+com/fantasticiii/temantravelling/Fragments/ShowHistory.java
+ com.fantasticiii.temantravelling.Fragments.ShowHistory
 com/fantasticiii/temantravelling/Fragments/FormOrderDirect.java
  com.fantasticiii.temantravelling.Fragments.FormOrderDirect
  com.fantasticiii.temantravelling.Fragments.FormOrderDirect$1
@@ -48,11 +50,12 @@ com/fantasticiii/temantravelling/Fragments/FormOrderDirect.java
 com/fantasticiii/temantravelling/Activities/SignInActivity.java
  com.fantasticiii.temantravelling.Activities.SignInActivity
  com.fantasticiii.temantravelling.Activities.SignInActivity$1
+ com.fantasticiii.temantravelling.Activities.SignInActivity$1$1
 com/fantasticiii/temantravelling/Activities/TourGuideActivity.java
  com.fantasticiii.temantravelling.Activities.TourGuideActivity
 com/fantasticiii/temantravelling/Activities/MainActivity.java
  com.fantasticiii.temantravelling.Activities.MainActivity
-com/fantasticiii/temantravelling/Fragments/ShowHistory.java
- com.fantasticiii.temantravelling.Fragments.ShowHistory
-com/fantasticiii/temantravelling/Activities/HistoryActivity.java
- com.fantasticiii.temantravelling.Activities.HistoryActivity
+com/fantasticiii/temantravelling/Fragments/ChooseOrderType.java
+ com.fantasticiii.temantravelling.Fragments.ChooseOrderType
+com/fantasticiii/temantravelling/SplashScreen/SplashScreen.java
+ com.fantasticiii.temantravelling.SplashScreen.SplashScreen

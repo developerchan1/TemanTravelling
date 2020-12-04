@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">224931087784-pr9lhercrqk8f65jmu2b83ch7je26n1s.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">224931087784</string>
+    <string name="google_api_key" translatable="false">AIzaSyArwIj6Uho8KhvijdMJTIS88kWmjH0I1WQ</string>
+    <string name="google_app_id" translatable="false">1:224931087784:android:31f251354199aebb84899d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyArwIj6Uho8KhvijdMJTIS88kWmjH0I1WQ</string>
+    <string name="google_storage_bucket" translatable="false">temantravelling.appspot.com</string>
+    <string name="project_id" translatable="false">temantravelling</string>
+</resources>
