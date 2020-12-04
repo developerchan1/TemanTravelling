@@ -4,6 +4,10 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\spinner_list.xml"
     },
     {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_settings.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_settings.xml"
+    },
+    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -16,12 +20,12 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_screen_background.xml.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\splash_screen_background.xml"
-    },
-    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_screen_background.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\splash_screen_background.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -30,6 +34,10 @@
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_icon_place.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_icon_place.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_acc_btn_bg.png.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\acc_btn_bg.png"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
@@ -48,12 +56,24 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\fragment_form_order_direct.xml"
     },
     {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history_single_item.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_history_single_item.xml"
+    },
+    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_undraw_travelers.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_undraw_travelers.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_user.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_teddy.png.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\teddy.png"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -72,20 +92,28 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tour_guide.xml.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_tour_guide.xml"
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_jogja.jpg.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\jogja.jpg"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tour_guide.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_tour_guide.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_order_tour_guide.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_order_tour_guide.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_history.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_left.xml.flat",
@@ -104,6 +132,10 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins.xml"
     },
     {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_show_history.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\fragment_show_history.xml"
+    },
+    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_icon_account.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_icon_account.xml"
     },
@@ -114,6 +146,14 @@
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_light.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins_light.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_privacy.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_privacy.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_container.png.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\container.png"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whatsapp_image.png.flat",
@@ -160,6 +200,10 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\order_detail_layout.xml"
     },
     {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_profile.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_profile.xml"
+    },
+    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins_bold.xml"
     },
@@ -198,5 +242,9 @@
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_labuanbajo.jpg.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\labuanbajo.jpg"
     }
 ]

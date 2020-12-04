@@ -211,6 +211,10 @@ attr chipStyle
 attr chipSurfaceColor
 attr circleCrop
 attr circleRadius
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clickAction
 attr closeIcon
 attr closeIconEnabled
@@ -980,6 +984,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color dark_grey
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1030,6 +1035,9 @@ color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
 color light_black
+color light_grey
+color light_grey_2
+color light_grey_3
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1577,6 +1585,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable acc_btn_bg
 drawable avd_hide_password
 drawable avd_show_password
 drawable bottom_navigation_background
@@ -1607,6 +1616,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable container
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1624,9 +1634,14 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_privacy
+drawable ic_profile
+drawable ic_settings
 drawable ic_undraw_go_to_destination
 drawable ic_undraw_travel_plans
 drawable ic_undraw_travelers
+drawable jogja
+drawable labuanbajo
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1657,6 +1672,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable splash_screen_background
+drawable teddy
 drawable teman_travelling_image
 drawable teman_travelling_logo
 drawable test_custom_background
@@ -1865,6 +1881,15 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
+id id_btn_logout
+id id_frame_layout_activity_history
+id id_iv_activity_history_single_item
+id id_tv_date_activity_history_single_item
+id id_tv_days_activity_history_single_item
+id id_tv_detail_activity_history_single_item
+id id_tv_location_activity_history_single_item
+id id_tv_title1_activity_history_single_item
+id id_tv_title2_activity_history_single_item
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1889,6 +1914,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayoutVertical
 id listMode
 id list_item
 id lottie_layer_name
@@ -1951,6 +1977,7 @@ id percent
 id pin
 id position
 id postLayout
+id profile_image
 id progress_circular
 id progress_horizontal
 id radio
@@ -1958,6 +1985,7 @@ id ratio
 id rb_dont_need_vehicle
 id rb_need_vehicle
 id rectangles
+id recyclerViewShowHistory
 id restart
 id reverse
 id reverseSawtooth
@@ -1976,6 +2004,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -2045,6 +2074,8 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2059,6 +2090,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar2
 id top
 id topPanel
 id touch_outside
@@ -2148,11 +2180,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_history
+layout activity_history_single_item
 layout activity_main
 layout activity_order_tour_guide
 layout activity_sign_in
 layout activity_sign_up
 layout activity_tour_guide
+layout activity_user
 layout activity_welcome
 layout custom_bottom_navigation_layout
 layout custom_dialog
@@ -2175,6 +2210,7 @@ layout fragment_choose_order_type
 layout fragment_form_order_direct
 layout fragment_form_order_plan
 layout fragment_loading_screen
+layout fragment_show_history
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2754,9 +2790,11 @@ style TextAppearance_MaterialComponents_Tooltip
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style TextDescStyleItemHistory
 style TextDescriptionStyle
 style TextSubtitleStyle
 style TextTitleStyle
+style TextTitleStyleItemHistory
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight
@@ -3094,6 +3132,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

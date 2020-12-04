@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TemanTravelling">
         <activity android:name=".Activities.TourGuideActivity" android:theme="@style/Theme.TemanTravelling.TransparentTheme"/>
+        <activity android:name=".Activities.UserActivity"></activity>
+        <activity android:name=".Activities.HistoryActivity" />
         <activity android:name=".Activities.OrderTourGuideActivity" />
         <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Activities.SignUpActivity" />
