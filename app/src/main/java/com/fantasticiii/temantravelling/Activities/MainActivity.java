@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         itemAccount = findViewById(R.id.item_account);
 
         itemTourGuide.setOnClickListener((view) -> {
-            startActivity(new Intent(MainActivity.this,TourGuideActivity.class));
+            startActivity(new Intent(MainActivity.this, OrderTourGuideActivity.class));
         });
     }
 }

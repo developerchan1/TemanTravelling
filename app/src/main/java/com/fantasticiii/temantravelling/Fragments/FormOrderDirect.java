@@ -17,7 +17,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 
+import com.fantasticiii.temantravelling.Manager.FragmentChangeListener;
 import com.fantasticiii.temantravelling.R;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.Objects;
 
@@ -26,6 +28,7 @@ public class FormOrderDirect extends Fragment {
     Toolbar toolbar;
     Spinner language, time, payMethod;
     EditText etDurationTime;
+    MaterialButton btnOrderNow;
     int mHour, mMinute;
 
     @Override
@@ -44,11 +47,21 @@ public class FormOrderDirect extends Fragment {
         time = view.findViewById(R.id.spinner_time);
         payMethod = view.findViewById(R.id.spinner_pay_method);
         etDurationTime = view.findViewById(R.id.et_duration_time);
+        btnOrderNow = view.findViewById(R.id.btn_order_now);
 
         addBackArrow();
         setSpinnerLanguage();
         setSpinnerTime();
         setSpinnerPayMethod();
+
+        btnOrderNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentChangeListener fc = (FragmentChangeListener) getActivity();
+                assert fc != null;
+                fc.replaceFragment(new LoadingScreen());
+            }
+        });
     }
 
     private void addBackArrow(){

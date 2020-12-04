@@ -26,7 +26,9 @@ import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.fantasticiii.temantravelling.Manager.FragmentChangeListener;
 import com.fantasticiii.temantravelling.R;
+import com.google.android.material.button.MaterialButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Objects;
@@ -36,6 +38,7 @@ public class FormOrderPlan extends Fragment {
     Toolbar toolbar;
     Spinner city, language, time, payMethod;
     EditText etStartDate, etStartTime, etDurationTime;
+    MaterialButton btnOrderNow;
     Calendar c;
     int mYear, mMonth, mDay;
     int mHour, mMinute;
@@ -59,9 +62,10 @@ public class FormOrderPlan extends Fragment {
         etStartDate = view.findViewById(R.id.et_start_date);
         etStartTime = view.findViewById(R.id.et_start_time);
         etDurationTime = view.findViewById(R.id.et_duration_time);
+        btnOrderNow = view.findViewById(R.id.btn_order_now);
 
         // Get Current Date
-        Calendar c = Calendar.getInstance();
+        c = Calendar.getInstance();
         mYear = c.get(Calendar.YEAR);
         mMonth = c.get(Calendar.MONTH);
         mDay = c.get(Calendar.DAY_OF_MONTH);
@@ -83,6 +87,15 @@ public class FormOrderPlan extends Fragment {
             @Override
             public void onClick(View view) {
                 showTimeDialog();
+            }
+        });
+
+        btnOrderNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentChangeListener fc = (FragmentChangeListener) getActivity();
+                assert fc != null;
+                fc.replaceFragment(new LoadingScreen());
             }
         });
     }

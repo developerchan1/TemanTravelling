@@ -1,0 +1,45 @@
+com/fantasticiii/temantravelling/Fragments/ChooseOrderType.java
+ com.fantasticiii.temantravelling.Fragments.ChooseOrderType
+com/fantasticiii/temantravelling/Activities/OrderTourGuideActivity.java
+ com.fantasticiii.temantravelling.Activities.OrderTourGuideActivity
+com/fantasticiii/temantravelling/Activities/SignUpActivity.java
+ com.fantasticiii.temantravelling.Activities.SignUpActivity
+com/fantasticiii/temantravelling/BuildConfig.java
+ com.fantasticiii.temantravelling.BuildConfig
+com/fantasticiii/temantravelling/Manager/FragmentChangeListener.java
+ com.fantasticiii.temantravelling.Manager.FragmentChangeListener
+com/fantasticiii/temantravelling/Activities/WelcomeActivity.java
+ com.fantasticiii.temantravelling.Activities.WelcomeActivity
+ com.fantasticiii.temantravelling.Activities.WelcomeActivity$1
+ com.fantasticiii.temantravelling.Activities.WelcomeActivity$2
+com/fantasticiii/temantravelling/Activities/MainActivity.java
+ com.fantasticiii.temantravelling.Activities.MainActivity
+com/fantasticiii/temantravelling/SplashScreen/SplashScreen.java
+ com.fantasticiii.temantravelling.SplashScreen.SplashScreen
+com/fantasticiii/temantravelling/Activities/SignInActivity.java
+ com.fantasticiii.temantravelling.Activities.SignInActivity
+ com.fantasticiii.temantravelling.Activities.SignInActivity$1
+com/fantasticiii/temantravelling/Activities/TourGuideActivity.java
+ com.fantasticiii.temantravelling.Activities.TourGuideActivity
+com/fantasticiii/temantravelling/Fragments/FormOrderDirect.java
+ com.fantasticiii.temantravelling.Fragments.FormOrderDirect
+ com.fantasticiii.temantravelling.Fragments.FormOrderDirect$1
+ com.fantasticiii.temantravelling.Fragments.FormOrderDirect$2
+ com.fantasticiii.temantravelling.Fragments.FormOrderDirect$3
+ com.fantasticiii.temantravelling.Fragments.FormOrderDirect$4
+com/fantasticiii/temantravelling/Fragments/LoadingScreen.java
+ com.fantasticiii.temantravelling.Fragments.LoadingScreen
+ com.fantasticiii.temantravelling.Fragments.LoadingScreen$1
+com/fantasticiii/temantravelling/Manager/PreferencesManager.java
+ com.fantasticiii.temantravelling.Manager.PreferencesManager
+com/fantasticiii/temantravelling/Fragments/FormOrderPlan.java
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$1
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$2
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$3
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$4
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$5
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$6
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$7
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$8
+ com.fantasticiii.temantravelling.Fragments.FormOrderPlan$9
