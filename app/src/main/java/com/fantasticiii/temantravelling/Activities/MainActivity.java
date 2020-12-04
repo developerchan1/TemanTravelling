@@ -25,5 +25,13 @@ public class MainActivity extends AppCompatActivity {
         itemTourGuide.setOnClickListener((view) -> {
             startActivity(new Intent(MainActivity.this, OrderTourGuideActivity.class));
         });
+
+        itemHistory.setOnClickListener((view) -> {
+            startActivity(new Intent(MainActivity.this, HistoryActivity.class));
+        });
+
+        itemAccount.setOnClickListener((view -> {
+            startActivity(new Intent(MainActivity.this, UserActivity.class));
+        }));
     }
 }
