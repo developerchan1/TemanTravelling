@@ -19,20 +19,22 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TemanTravelling" >
+        <activity android:name="com.fantasticiii.temantravelling.Activities.UserActivity" />
+        <activity android:name="com.fantasticiii.temantravelling.Activities.HistoryActivity" />
         <activity android:name="com.fantasticiii.temantravelling.Activities.TourGuideActivity" />
         <activity android:name="com.fantasticiii.temantravelling.Activities.OrderTourGuideActivity" />
-        <activity android:name="com.fantasticiii.temantravelling.Activities.MainActivity" />
-        <activity android:name="com.fantasticiii.temantravelling.Activities.SignUpActivity" />
-        <activity android:name="com.fantasticiii.temantravelling.Activities.SignInActivity" />
-        <activity
-            android:name="com.fantasticiii.temantravelling.SplashScreen.SplashScreen"
-            android:theme="@style/SplashTheme" >
+        <activity android:name="com.fantasticiii.temantravelling.Activities.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.fantasticiii.temantravelling.Activities.SignUpActivity" />
+        <activity android:name="com.fantasticiii.temantravelling.Activities.SignInActivity" />
+        <activity
+            android:name="com.fantasticiii.temantravelling.SplashScreen.SplashScreen"
+            android:theme="@style/SplashTheme" />
         <activity android:name="com.fantasticiii.temantravelling.Activities.WelcomeActivity" />
 
         <meta-data
