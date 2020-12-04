@@ -76,12 +76,12 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_tour_guide.xml"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_order_tour_guide.xml.flat",
@@ -96,16 +96,12 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\fragment_form_order_plan.xml"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins.xml"
-    },
-    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_light.xml.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins_light.xml"
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_icon_account.xml.flat",
@@ -114,6 +110,14 @@
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_light.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins_light.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_whatsapp_image.png.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\whatsapp_image.png"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_undraw_travel_plans.xml.flat",
@@ -152,6 +156,10 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_detail_layout.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\layout\\order_detail_layout.xml"
+    },
+    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\font\\poppins_bold.xml"
     },
@@ -164,12 +172,12 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\ic_icon_history.xml"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_teman_travelling_image.png.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\teman_travelling_image.png"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_undraw_go_to_destination.xml.flat",
@@ -180,12 +188,12 @@
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_teman_travelling_logo.png.flat",
-        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\teman_travelling_logo.png"
-    },
-    {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
         "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\drawable_teman_travelling_logo.png.flat",
+        "source": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\src\\main\\res\\drawable\\teman_travelling_logo.png"
     },
     {
         "merged": "D:\\My Projects\\Android Projects\\TemanTravelling\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",

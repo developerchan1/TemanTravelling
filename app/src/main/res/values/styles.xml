@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.TemanTravelling.TransparentTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="WhiteBackArrowToolbarTheme">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
 
     <style name="TextTitleStyle">
         <item name="android:fontFamily">@font/poppins_bold</item>
@@ -27,6 +36,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:padding">10dp</item>
+        <item name="android:letterSpacing">0</item>
     </style>
 
     <style name="ButtonLightStyle">
@@ -35,5 +45,7 @@
         <item name="android:theme">@style/Platform.MaterialComponents.Light</item>
         <item name="android:textColor">@color/color_primary</item>
         <item name="android:padding">10dp</item>
+        <item name="android:letterSpacing">0</item>
     </style>
+
 </resources>

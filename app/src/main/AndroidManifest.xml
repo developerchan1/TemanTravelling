@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TemanTravelling">
-        <activity android:name=".Activities.TourGuideActivity"></activity>
+        <activity android:name=".Activities.TourGuideActivity" android:theme="@style/Theme.TemanTravelling.TransparentTheme"/>
         <activity android:name=".Activities.OrderTourGuideActivity" />
         <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Activities.SignUpActivity" />
