@@ -13,17 +13,19 @@
         <activity android:name=".Activities.UserActivity"></activity>
         <activity android:name=".Activities.HistoryActivity" />
         <activity android:name=".Activities.OrderTourGuideActivity" />
-        <activity android:name=".Activities.MainActivity" />
-        <activity android:name=".Activities.SignUpActivity" />
-        <activity android:name=".Activities.SignInActivity" />
-        <activity
-            android:name=".SplashScreen.SplashScreen"
-            android:theme="@style/SplashTheme">
+        <activity android:name=".Activities.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Activities.SignUpActivity" />
+        <activity android:name=".Activities.SignInActivity" />
+        <activity
+            android:name=".SplashScreen.SplashScreen"
+            android:theme="@style/SplashTheme">
+
         </activity>
         <activity android:name=".Activities.WelcomeActivity" />
 
