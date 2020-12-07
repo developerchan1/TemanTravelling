@@ -6,17 +6,25 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.fantasticiii.temantravelling.Manager.PreferencesManager;
 import com.fantasticiii.temantravelling.R;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 public class SignUpActivity extends AppCompatActivity {
@@ -24,7 +32,9 @@ public class SignUpActivity extends AppCompatActivity {
     Toolbar toolbar;
     TextInputEditText etName, etEmail, etPassword, etConfirmPassword;
     MaterialButton btnSignUp;
-    private FirebaseAuth mAuth;
+    FirebaseAuth mAuth;
+    FirebaseFirestore db;
+    PreferencesManager preferencesManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +48,8 @@ public class SignUpActivity extends AppCompatActivity {
         etConfirmPassword = findViewById(R.id.et_confirm_password);
         btnSignUp = findViewById(R.id.btn_sign_up);
         mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+        preferencesManager = new PreferencesManager(this);
 
         addBackArrow();
 
@@ -56,9 +68,9 @@ public class SignUpActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                    startActivity(new Intent(SignUpActivity.this,SignInActivity.class));
-                                    finish();
+                                    addUserDataToFirestore(email,
+                                            etName.getText().toString(),
+                                            "");
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(SignUpActivity.this, "Authentication failed.",
@@ -70,6 +82,37 @@ public class SignUpActivity extends AppCompatActivity {
         });
     }
 
+    private void addUserDataToFirestore(String email, String name, String photoURL) {
+
+        Map<String, Object> newUser = new HashMap<>();
+        newUser.put("nama",name);
+        newUser.put("email",email);
+        newUser.put("photoURL",photoURL);
+
+        DocumentReference onProgressRef = db.collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        onProgressRef
+                .set(newUser)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        //add user data to shared preferences
+                        preferencesManager.setName(name);
+                        preferencesManager.setEmail(email);
+                        preferencesManager.setPhotoUrl(photoURL);
+
+                        //redirect to main activity
+                        startActivity(new Intent(SignUpActivity.this,MainActivity.class));
+                        finish();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w("Error", "Error writing document", e);
+                    }
+                });
+    }
+
     private void addBackArrow(){
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -78,12 +121,12 @@ public class SignUpActivity extends AppCompatActivity {
 
     private boolean inputsIsValid(String email, String password){
         if(email.isEmpty()){
-            Toast.makeText(this, "Email must be filled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Email harus diisi", Toast.LENGTH_SHORT).show();
             return false;
         }
 
         if(password.isEmpty()){
-            Toast.makeText(this, "Password must be filled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Password harus diisi", Toast.LENGTH_SHORT).show();
             return false;
         }
 

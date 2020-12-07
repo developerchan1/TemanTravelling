@@ -4,27 +4,54 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class History implements Parcelable{
-    private String title1;
-    private String title2;
-    private String location;
-    private int numDay;
-    private String date;
-    private String detail;
-    private int image;
+    private String partnerUID, city, language, dateAndTime, timeType, paymentMethod, status;
+    private int duration;
+    private long price;
+    private boolean needVehicle;
 
-    public History(){
-
+    public History(String partnerUID, String city, String language, String dateAndTime, int duration, String timeType, boolean needVehicle, String paymentMethod, long price, String status) {
+        this.partnerUID = partnerUID;
+        this.city = city;
+        this.language = language;
+        this.dateAndTime = dateAndTime;
+        this.timeType = timeType;
+        this.paymentMethod = paymentMethod;
+        this.status = status;
+        this.duration = duration;
+        this.price = price;
+        this.needVehicle = needVehicle;
     }
 
-
     protected History(Parcel in) {
-        title1 = in.readString();
-        title2 = in.readString();
-        location = in.readString();
-        numDay = in.readInt();
-        date = in.readString();
-        detail = in.readString();
-        image = in.readInt();
+        partnerUID = in.readString();
+        city = in.readString();
+        language = in.readString();
+        dateAndTime = in.readString();
+        timeType = in.readString();
+        paymentMethod = in.readString();
+        status = in.readString();
+        duration = in.readInt();
+        price = in.readLong();
+        needVehicle = in.readByte() != 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(partnerUID);
+        dest.writeString(city);
+        dest.writeString(language);
+        dest.writeString(dateAndTime);
+        dest.writeString(timeType);
+        dest.writeString(paymentMethod);
+        dest.writeString(status);
+        dest.writeInt(duration);
+        dest.writeLong(price);
+        dest.writeByte((byte) (needVehicle ? 1 : 0));
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
     public static final Creator<History> CREATOR = new Creator<History>() {
@@ -39,76 +66,83 @@ public class History implements Parcelable{
         }
     };
 
-    public String getTitle1() {
-        return title1;
+    public String getPartnerUID() {
+        return partnerUID;
     }
 
-    public void setTitle1(String title1) {
-        this.title1 = title1;
+    public void setPartnerUID(String partnerUID) {
+        this.partnerUID = partnerUID;
     }
 
-    public String getTitle2() {
-        return title2;
+    public String getCity() {
+        return city;
     }
 
-    public void setTitle2(String title2) {
-        this.title2 = title2;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getLocation() {
-        return location;
+    public String getLanguage() {
+        return language;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
-    public int getNumDay() {
-        return numDay;
+    public String getDateAndTime() {
+        return dateAndTime;
     }
 
-    public void setNumDay(int numDay) {
-        this.numDay = numDay;
+    public void setDateAndTime(String dateAndTime) {
+        this.dateAndTime = dateAndTime;
     }
 
-    public int getImage() {
-        return image;
+    public String getTimeType() {
+        return timeType;
     }
 
-    public void setImage (int image) {
-        this.image = image;
+    public void setTimeType(String timeType) {
+        this.timeType = timeType;
     }
 
-    public String getDate() {
-        return date;
+    public String getPaymentMethod() {
+        return paymentMethod;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
     }
 
-    public String getDetail() {
-        return detail;
+    public String getStatus() {
+        return status;
     }
 
-    public void setDetail(String detail) {
-        this.detail = detail;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-
-    @Override
-    public int describeContents() {
-        return 0;
+    public int getDuration() {
+        return duration;
     }
 
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(title1);
-        parcel.writeString(title2);
-        parcel.writeString(location);
-        parcel.writeInt(numDay);
-        parcel.writeString(date);
-        parcel.writeString(detail);
-        parcel.writeInt(image);
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
+    }
+
+    public boolean isNeedVehicle() {
+        return needVehicle;
+    }
+
+    public void setNeedVehicle(boolean needVehicle) {
+        this.needVehicle = needVehicle;
     }
 }

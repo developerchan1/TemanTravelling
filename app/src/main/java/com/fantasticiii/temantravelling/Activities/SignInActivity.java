@@ -11,12 +11,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.fantasticiii.temantravelling.Manager.PreferencesManager;
 import com.fantasticiii.temantravelling.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Objects;
 
@@ -26,6 +29,8 @@ public class SignInActivity extends AppCompatActivity {
     TextInputEditText etEmail, etPassword;
     Button btnSignIn;
     private FirebaseAuth mAuth;
+    FirebaseFirestore db;
+    PreferencesManager preferencesManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +42,8 @@ public class SignInActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.et_password);
         btnSignIn = findViewById(R.id.btn_sign_in);
         mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+        preferencesManager = new PreferencesManager(this);
 
         addBackArrow();
 
@@ -56,7 +63,7 @@ public class SignInActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success
-                                    startActivity(new Intent(SignInActivity.this,MainActivity.class));
+                                    getUserData();
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(SignInActivity.this, "Authentication failed.",
@@ -69,14 +76,44 @@ public class SignInActivity extends AppCompatActivity {
         });
     }
 
+    private void getUserData() {
+        //profileImage.setImageURI(user.getPhotoUrl());
+        db.collection("users")
+                .document(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document.exists()) {
+                                Log.d("Error", "DocumentSnapshot data: " + document.getData());
+                                preferencesManager.setName(document.getString("nama"));
+                                preferencesManager.setEmail(document.getString("email"));
+                                preferencesManager.setPhotoUrl(document.getString("photoURL"));
+                                preferencesManager.setNoWhatsapp(document.getString("noWhatsapp"));
+
+                                Intent i = new Intent(SignInActivity.this,MainActivity.class);
+                                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(i);
+                            } else {
+                                Log.d("Error", "No such document");
+                            }
+                        } else {
+                            Log.d("Error", "get failed with ", task.getException());
+                        }
+                    }
+                });
+    }
+
     private boolean inputsIsValid(String email, String password){
         if(email.isEmpty()){
-            Toast.makeText(this, "Email must be filled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Email harus diisi", Toast.LENGTH_SHORT).show();
             return false;
         }
 
         if(password.isEmpty()){
-            Toast.makeText(this, "Password must be filled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Password harus diisi", Toast.LENGTH_SHORT).show();
             return false;
         }
 

@@ -15,7 +15,10 @@ import com.fantasticiii.temantravelling.Model.History;
 import com.fantasticiii.temantravelling.R;
 
 import java.lang.reflect.Array;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ShowHistoryAdapter extends RecyclerView.Adapter<ShowHistoryAdapter.ShowHistoryViewHolder> {
@@ -42,14 +45,20 @@ public class ShowHistoryAdapter extends RecyclerView.Adapter<ShowHistoryAdapter.
     public void onBindViewHolder(@NonNull ShowHistoryViewHolder holder, int position) {
         History history = historyArrayList.get(position);
 
-        holder.numDays.setText(history.getNumDay() + " Days");
-        holder.detail.setText(history.getDetail());
-        holder.location.setText(history.getLocation());
-        holder.imageView.setImageResource(history.getImage());
-        holder.date.setText(history.getDate());
-        holder.txtTitle1.setText(history.getTitle1());
-        holder.txtTitle2.setText(history.getTitle2());
+        holder.tvCity.setText(history.getCity());
+        holder.tvDateAndTime.setText(formatDateAndTime(history.getDateAndTime()));
+        holder.tvDuration.setText(history.getDuration()+" "+history.getTimeType());
+        holder.tvStatus.setText(history.getStatus());
+    }
 
+    private String formatDateAndTime(String dateAndTime) {
+        try {
+            Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(dateAndTime);
+            return new SimpleDateFormat("dd MMMM yyyy, HH:mm").format(date);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 
     @Override
@@ -58,18 +67,13 @@ public class ShowHistoryAdapter extends RecyclerView.Adapter<ShowHistoryAdapter.
     }
 
     public class ShowHistoryViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView txtTitle1,txtTitle2, location, numDays, date, detail;
+        TextView tvCity, tvDateAndTime, tvDuration, tvStatus;
         public ShowHistoryViewHolder(@NonNull View itemView, ShowHistoryItemListener showHistoryItemListener) {
             super(itemView);
-
-            imageView = itemView.findViewById(R.id.id_iv_activity_history_single_item);
-            txtTitle1 = itemView.findViewById(R.id.id_tv_title1_activity_history_single_item);
-            txtTitle2 = itemView.findViewById(R.id.id_tv_title2_activity_history_single_item);
-            location = itemView.findViewById(R.id.id_tv_location_activity_history_single_item);
-            numDays = itemView.findViewById(R.id.id_tv_days_activity_history_single_item);
-            date = itemView.findViewById(R.id.id_tv_date_activity_history_single_item);
-            detail = itemView.findViewById(R.id.id_tv_detail_activity_history_single_item);
+            tvCity = itemView.findViewById(R.id.tv_city);
+            tvDateAndTime = itemView.findViewById(R.id.tv_date_and_time);
+            tvDuration = itemView.findViewById(R.id.tv_duration);
+            tvStatus = itemView.findViewById(R.id.tv_status);
 
             itemView.setOnClickListener((view) -> {
                 showHistoryItemListener.onShowHistoryItemClick(getAdapterPosition());

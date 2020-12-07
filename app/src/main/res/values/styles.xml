@@ -37,6 +37,7 @@
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:padding">10dp</item>
         <item name="android:letterSpacing">0</item>
+        <item name="android:lineSpacingMultiplier">0.8</item>
     </style>
 
     <style name="ButtonLightStyle">
@@ -50,10 +51,10 @@
 
 
     <style name="TextTitleStyleItemHistory">
-        <item name="android:fontFamily">@font/poppins_bold</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:lineSpacingMultiplier">0.8</item>
-        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:textColor">@color/light_black</item>
     </style>
 
     <style name="TextDescStyleItemHistory">

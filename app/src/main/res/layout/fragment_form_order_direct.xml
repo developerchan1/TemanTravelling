@@ -155,6 +155,7 @@
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppins_bold"
                                     android:textColor="@color/color_primary"
+                                    android:textSize="20sp"
                                     android:text="Rp -" />
                             </LinearLayout>
 

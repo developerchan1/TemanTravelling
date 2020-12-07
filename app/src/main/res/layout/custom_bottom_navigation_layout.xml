@@ -40,31 +40,31 @@
             android:text="Tour Guide"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/item_place"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1"
-        android:gravity="center_horizontal"
-        android:clickable="true"
-        android:background="?attr/selectableItemBackground">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/item_place"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:clickable="true"-->
+<!--        android:background="?attr/selectableItemBackground">-->
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
-            android:src="@drawable/ic_icon_place"
-            app:tint="@color/color_primary" />
+<!--        <ImageView-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:padding="8dp"-->
+<!--            android:src="@drawable/ic_icon_place"-->
+<!--            app:tint="@color/color_primary" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:fontFamily="@font/poppins"
-            android:textColor="@color/light_black"
-            android:text="Place"/>
-    </LinearLayout>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="10sp"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:textColor="@color/light_black"-->
+<!--            android:text="Place"/>-->
+<!--    </LinearLayout>-->
 
     <LinearLayout
         android:id="@+id/item_history"

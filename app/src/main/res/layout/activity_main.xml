@@ -6,6 +6,170 @@
     android:layout_height="match_parent"
     tools:context=".Activities.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="100dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:background="@color/color_primary">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:civ_circle_background_color="@color/white"
+                android:src="@drawable/teman_travelling_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:text="Selamat Datang, "/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/TextTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:textColor="@color/white"
+                    android:text="Chandra" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/running_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sedang Berjalan"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                style="@style/TextSubtitleStyle"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_running_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/order_card_gradient"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kota Destinasi"
+                        android:textColor="@color/white"
+                        style="@style/TextDescriptionStyle"/>
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Kisaran"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        style="@style/TextSubtitleStyle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Waktu Tersisa"
+                        android:textColor="@color/white"
+                        style="@style/TextDescriptionStyle"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="1 Hari : 2 Jam : 2 Menit"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/white"
+                        style="@style/TextSubtitleStyle"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="visible">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_undraw_travelers"/>
+
+            <TextView
+                style="@style/TextTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/color_primary"
+                android:layout_marginTop="20dp"
+                android:text="Butuh Tour Guide?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temukan Tour Guide mu Sekarang"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                style="@style/TextSubtitleStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_order_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesan Sekarang"
+                android:textAllCaps="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="20dp"
+                style="@style/ButtonPrimaryStyle" />
+        </LinearLayout>
+    </LinearLayout>
     <include layout="@layout/custom_bottom_navigation_layout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
